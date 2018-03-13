@@ -62,20 +62,24 @@
     </select>
     <label class="item-sort-title">Цена: 100 руб. – 500 руб.</label>
        <!-- тут будут ползунки -->
-    <label class="item-list-fat" for="item-radio-id">Жирность:</label>
-      <div class="item-sort-fat" id="item-radio-id">
-        <input type="radio" name="choose1" value="0"><span> 0%</span>
-        <input type="radio" name="choose2" value="less10" checked><span> до 10%</span>
-        <input type="radio" name="choose3" value="less30"><span> до 30%</span>
-        <input type="radio" name="choose3" value="more30"><span> выше 30%</span>
+    <span>Жирность:</span>
+      <div class="item-sort-fat">
+        <input type="radio" name="choose1" value="0">
+        <label class="sort-radio-label"> 0%</label>
+        <input type="radio" name="choose2" value="less10" checked>
+        <label class="sort-radio-label"> до 10%</label>
+        <input type="radio" name="choose3" value="less30">
+        <label class="sort-radio-label"> до 30%</label>
+        <input type="radio" name="choose3" value="more30">
+        <label class="sort-radio-label"> выше 30%</label>
       </div>
-    <label class="item-list-inside" for="item-box-id">Наполнители:</label>
-      <div class="item-list-check" id="item-box-id">
-        <input type="checkbox" name="choose1" value="1" checked><span> шоколадные</span>
-        <input type="checkbox" name="choose2" value="2" checked><span> сахарные присыпки</span>
-        <input type="checkbox" name="choose3" value="3"><span> фрукты</span>
-        <input type="checkbox" name="choose3" value="4"><span> сиропы</span>
-        <input type="checkbox" name="choose3" value="5"><span> джемы</span>
+    <span>Наполнители:</span>
+      <div class="item-list-check">
+        <input type="checkbox" name="choose1" value="1" checked><label class="sort-check-label"> шоколадные</label>
+        <input type="checkbox" name="choose2" value="2" checked><label class="sort-check-label"> сахарные присыпки</label>
+        <input type="checkbox" name="choose3" value="3"><label class="sort-check-label"> фрукты</label>
+        <input type="checkbox" name="choose3" value="4"><label class="sort-check-label"> сиропы</label>
+        <input type="checkbox" name="choose3" value="5"><label class="sort-check-label"> джемы</label>
       </div>
       <input type="submit" value="Применить">
     </form>

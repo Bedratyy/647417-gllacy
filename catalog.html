@@ -5,6 +5,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <!-- Порядок блоков на главном сайте -->
@@ -13,7 +14,7 @@
 <header class="main-header">
   <nav class="main-navigation">
     <a class="main-header-logo" href="index.html">
-      <img src="" width="#" height="#" alt="Логотип магазина мороженного GllacyShop">
+      <img src="img/logo.svg" width="#" height="#" alt="Логотип магазина мороженного GllacyShop">
     </a>
     <ul class="site-navigation">
       <li><a href="#"><span>Каталог</span>
@@ -29,9 +30,13 @@
     </ul>
   </nav>
   <ul class="user-navigation">
-    <li class="header-search">Поиск</li>
-    <li class="header-login">Вход</li>
-    <li class="header-trash">Корзина</li>
+    <li class="header-search">
+      <img src="img/loupe.svg">
+    </li>
+    <li class="header-login">
+      <img src="img/entrance.svg"> Вход</li>
+    <li class="header-trash">
+      <img src="img/basket-red.svg"> 2 товара</li>
   </ul>
   <div class="header-info">
     <span class="header-time"> 10 до 20, ежедневно</span><br>
@@ -54,6 +59,7 @@
     <!-- Фильтры -->
     <form class="item-list-sort">
       <label class="item-sort-title" for="item-sort-switch">Сортировка:</label>
+      <img src="img/select-arrow.svg">
     <select name="item-sort-select" id="item-sort-switch">
       <option value="popular">по популярности</option>
       <option value="cheap">сначала недорогие</option>
@@ -62,106 +68,109 @@
     </select>
     <label class="item-sort-title">Цена: 100 руб. – 500 руб.</label>
        <!-- тут будут ползунки -->
+        <img src="img/filter-button.svg">
+        <img src="img/filter-button.svg">
+
     <span>Жирность:</span>
       <div class="item-sort-fat">
         <input type="radio" name="choose1" value="0">
-        <label class="sort-radio-label"> 0%</label>
+        <label class="sort-radio-label"><img src="img/radio-off.svg"> 0%</label>
         <input type="radio" name="choose2" value="less10" checked>
-        <label class="sort-radio-label"> до 10%</label>
+        <label class="sort-radio-label"><img src="img/radio-on.svg"> до 10%</label>
         <input type="radio" name="choose3" value="less30">
-        <label class="sort-radio-label"> до 30%</label>
+        <label class="sort-radio-label"><img src="img/radio-off.svg"> до 30%</label>
         <input type="radio" name="choose3" value="more30">
-        <label class="sort-radio-label"> выше 30%</label>
+        <label class="sort-radio-label"><img src="img/radio-off.svg"> выше 30%</label>
       </div>
     <span>Наполнители:</span>
       <div class="item-list-check">
-        <input type="checkbox" name="choose1" value="1" checked><label class="sort-check-label"> шоколадные</label>
-        <input type="checkbox" name="choose2" value="2" checked><label class="sort-check-label"> сахарные присыпки</label>
-        <input type="checkbox" name="choose3" value="3"><label class="sort-check-label"> фрукты</label>
-        <input type="checkbox" name="choose3" value="4"><label class="sort-check-label"> сиропы</label>
-        <input type="checkbox" name="choose3" value="5"><label class="sort-check-label"> джемы</label>
+        <input type="checkbox" name="choose1" value="1" checked><img src="img/checkbox-on.svg"><label class="sort-check-label"> шоколадные</label>
+        <input type="checkbox" name="choose2" value="2" checked><img src="img/checkbox-on.svg"><label class="sort-check-label"> сахарные присыпки</label>
+        <input type="checkbox" name="choose3" value="3"><img src="img/checkbox-off.svg"><label class="sort-check-label"> фрукты</label>
+        <input type="checkbox" name="choose3" value="4"><img src="img/checkbox-off.svg"><label class="sort-check-label"> сиропы</label>
+        <input type="checkbox" name="choose3" value="5"><img src="img/checkbox-off.svg"><label class="sort-check-label"> джемы</label>
       </div>
       <input type="submit" value="Применить">
     </form>
     <ul>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>310 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/1_1.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>310 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
         </a>
         <!-- Сомнения, по поводу правильного использования тега А на весь элемент-->
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>380 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/1_2.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>380 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочно-кофейное с кусочками шоколада</p>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>355 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/1_3.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>355 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
           <a href="#" class="button-case">Быстрый просмотр</a>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>415 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/1_4.png.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>415 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочное крем-брюле с карамельной подливкой</p>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>325 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/2_1.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>325 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочное с брусничным джемом</p>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>410 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/2_2.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>410 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочно-черничное с цельными ягодами черники</p>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>375 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/2_3.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>375 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочно-лимонное с карамельной присыпкой</p>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>320 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/2_4.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>320 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочное с шоколадной стружкой</p>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>440 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/3_1.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>440 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочно-ванильное с кусочками шоколада</p>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>435 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/3_2.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>435 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочное с ментоловым сиропом</p>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>355 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/3_3.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>355 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочное с кусочками черного шоколада</p>
         </a>
       </li>
       <li class="item">
-        <a href="#" alt=""> <img src="img" width="" height="" alt="">
-          <p class="best-list-price"> <span>420 Р</span>/кг</p>
+        <a href="" alt=""> <img src="img/3_4.png" width="267" height="267" alt="">
+          <p class="best-list-price"> <span>420 <img src="img/ruble.svg" alt="Р"></span>/кг</p>
           <p>Сливочное с мятным сиропом</p>
         </a>
       </li>
     </ul>
     <!-- разметка переключателей -->
     <div class="switcher">
-      <a href="#" class="switcher-left"> < </a>
+      <a href="#" class="switcher-left"><img src="img/icon-left-small.svg" alt=" < "></a>
       <ul> <!-- Назначим класс всем li позже, используя селекторы -->
         <li><a href="#">1</a></li>
         <li><a href="#">2</a></li>
@@ -169,7 +178,7 @@
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
       </ul>
-      <a href="#" class="switcher-right"> > </a>
+      <a href="#" class="switcher-right"><img src="img/icon-right-small.svg" alt=" > "></a>
     </div>
   </section>
 
@@ -180,21 +189,22 @@
 <footer>
   <div class="footer-social">
     <ul>
-      <li><a class="social-button-twitter" href="#"></a></li>
-      <li><a class="social-button-insta" href="#"></a></li>
-      <li><a class="social-button-fb" href="#"></a></li>
-      <li><a class="social-button-vk" href="#"></a></li>
+      <li><a class="social-button-twitter" href="#"><img src="img/twitter.svg" alt="Twitter"></a></li>
+      <li><a class="social-button-insta" href="#"><img src="img/instagram.svg" alt="Instagram"></a></li>
+      <li><a class="social-button-fb" href="#"><img src="img/fb.svg" alt="Facebook"></a></li>
+      <li><a class="social-button-vk" href="#"><img src="img/vk.svg" alt="Vkontakte"></a></li>
     </ul>
   </div>
   <div class="footer-links">
     <ul>
-      <li><a class="" href="#"><div class="icon-heart"></div><b>Для поставщиков</b></a></li>
+      <li><a class="" href="#"><img src="img/heart.svg"><b> Для поставщиков</b></a></li>
       <li><a class="" href="#">О производстве</a></li>
       <li><a class="" href="#">Наши документы</a></li>
       <li><a class="" href="#">Экологические стандарты</a></li>
     </ul>
   </div>
   <div class="footer-made-in">
+    <img src="img/logo-htmlacademy.svg" alt="HTML academy logo" width="108" height="39">
     <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> C 2018</p>
   </div>
 </footer>
@@ -222,7 +232,7 @@
 <!-- Выпадающие items в корзине -->
 <div class="cart-item-list">
   <div class="cart-line">
-    <a href="#" class="cart-X">X</a>
+    <a href="#" class="cart-X"><img src="img/cross-small.svg"alt="X"></a>
     <img src="#" class="cart-mini-img">
     <span>Пломбир с апельсиновым джемом</span>
     <span class="cart-item-kg">1,5 кг</span>
@@ -230,7 +240,7 @@
     <span class="cart-item-cost">300 руб.</span>
   </div>
   <div class="cart-line">
-    <a href="#" class="cart-X">X</a>
+    <a href="#" class="cart-X"><img src="img/cross-small.svg" alt="X"></a>
     <img src="#" class="cart-mini-img">
     <span>Пломбир с апельсиновым джемом</span>
     <span class="cart-item-kg">1,5 кг</span>

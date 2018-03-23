@@ -1,3 +1,152 @@
 body {
   background-color: #849d8f;
+  font-family: "Roboto";
+}
+
+.site-navigation{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-navigation>li{
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.site-navigation a{
+  display: block;
+  color: #ffffff;
+  margin-left: -1px;
+  padding: 8px 10px;
+}
+
+.site-navigation a:hover{
+  background: #fbded8;
+  color:#323232;
+}
+
+.site-navigation .site-navigation-sub{
+  position: absolute;
+  list-style: none;
+  display: none;
+  left: 1px;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation .site-navigation-sub a{
+  margin-bottom: -1px;
+  background-color:#ffffff;
+  color: #323232;
+}
+
+.site-navigation >li:hover .site-navigation-sub{      /*  выпадающее меню */
+  display: block;
+}
+
+.shares-into{
+  display: inline-block;
+}
+
+.raspberry-block{
+  background: url("../img/background_raspberry.png") no-repeat;
+  width: 560px;
+  height: 229px;
+}
+
+.raspberry-block .shares-title{
+  font-weight: bold;
+  font-size: 35px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.raspberry-block p{
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  padding-left: 20px;
+  line-height:22px;
+}
+
+.raspberry-block .slider-button{} /*кнопка хочу варенье */
+
+.chocolate-block{
+  background: url("../img/background_chocolate.png") no-repeat;
+  width: 560px;
+  height: 229px;
+  margin-left: 30px;
+}
+
+.chocolate-block .shares-title{
+  font-weight: bold;
+  font-size: 35px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+.chocolate-block p{
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  padding-left: 20px;
+  line-height:22px;
+}
+
+.chocolate-block .slider-button{} /*кнопка хочу шоколад */
+
+.best-item{
+  display: inline-block;
+  list-style: none;
+}
+
+.best-list-price{
+  font-size: 45px;
+  color: white;
+}
+
+.blog{
+  background: url("../img/background_raspberry_blog.png") no-repeat;
+  width:560px;
+  height: 229px;
+  margin-left:20px;
+  padding: 10px;
+  color: #323232;
+  float: left;
+}
+
+.blog-link{
+  color: black;
+  font-size:24px;
+  font-weight: bold;
+  line-height:30px;
+}
+
+.features{
+  background-image: url("../img/vafla.png");
+  width: 1146px;
+  height: 306px;
+  margin: 20px;
+}
+
+.features h3{
+  font-weight: Regular;
+  font-size: 24px;
+  margin: 20px;
+}
+
+.features-list{
+  list-style: none;
+  column-count: 2;
+  column-width: 500px;
+  column-gap: 30px;
+}
+
+.feature-item{
+  font-size: 16px;
 }
